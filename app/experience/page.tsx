@@ -24,10 +24,23 @@ export default function Experience() {
   // EDIT THIS ARRAY to add/remove/modify work experience entries
   const workExperience = [
     {
+      title: 'Founder',
+      organization: 'GunnerPool',
+      location: 'Remote',
+      dateRange: 'Dec 2025 – Present',
+      demoLink: 'https://drive.google.com/file/d/1MICAbfdNKZx-Avd9P2dwLdcCdoGhvwx1/view?usp=drive_link',
+      buttonText: 'See Prototype Demo!',
+      bullets: [
+        'Building a tournament-based fantasy sports application that allows users to create and join leagues, draft players, and compete against friends',
+      ],
+    },
+    {
       title: 'Product Management Fellow',
       organization: 'Christensen Family Center for Innovation',
       location: 'Durham, NC',
       dateRange: 'Jan 2025 – Present',
+      demoLink: 'https://cfci.pratt.duke.edu/2025/11/19/student-highlight-andrew-dawson/',
+      buttonText: 'Student Highlight: Andrew Dawson',
       bullets: [
         'Co-led launch of Duke Product Lab, pairing 4+ student teams with industry partners to build real tech products',
         'Mentoring 20+ student product managers on core skills, including user research, KPIs, and product strategy',
@@ -39,6 +52,8 @@ export default function Experience() {
       organization: 'GameRun',
       location: 'Durham, NC',
       dateRange: 'Sep 2025 – Dec 2025',
+      demoLink: 'https://drive.google.com/file/d/1xrUuopvoFW8OudjYEV6QFI-Hprhdll5X/view?usp=drive_link',
+      buttonText: 'See Final Demo!',
       bullets: [
         'Led development of an AI-driven sports analytics tool enabling elite baseball athletes to visualize progress, track performance, and receive data-backed, personalized training insights',
         'Conducted 15+ user discovery interviews with athletes and coaches to identify usability and visualization needs',
@@ -62,6 +77,8 @@ export default function Experience() {
       organization: 'BabyBumps',
       location: 'Durham, NC',
       dateRange: 'Sep 2024 – Dec 2024',
+      demoLink: 'https://dukecfci.notion.site/Reimagining-Surrogacy-with-a-Guided-Online-Journey-22b478a62ca181c384a2f333412a3ff1',
+      buttonText: 'Project Overview',
       bullets: [
         'Delivered a functional MVP for a surrogacy startup in two 4-week sprints, from Figma wireframes to JavaScript web app, enabling early testing (10+ users) and validating product-market fit',
         'Drove product vision and strategy, developing a stakeholder-aligned roadmap to meet user and business needs',
@@ -138,6 +155,8 @@ export default function Experience() {
                 location={exp.location}
                 dateRange={exp.dateRange}
                 bullets={exp.bullets}
+                demoLink={exp.demoLink}
+                buttonText={exp.buttonText}
               />
             ))}
           </div>

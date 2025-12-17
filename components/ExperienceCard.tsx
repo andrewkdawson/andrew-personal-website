@@ -7,6 +7,7 @@
  * - Change card styling
  * - Modify date format
  * - Update bullet point styling
+ * - Change demo button styling
  * 
  * Location: components/ExperienceCard.tsx
  */
@@ -17,6 +18,8 @@ interface ExperienceCardProps {
   dateRange: string;
   bullets: string[];
   isLeadership?: boolean;
+  demoLink?: string;
+  buttonText?: string;
 }
 
 export function ExperienceCard({
@@ -26,9 +29,23 @@ export function ExperienceCard({
   dateRange,
   bullets,
   isLeadership = false,
+  demoLink,
+  buttonText = 'Demo',
 }: ExperienceCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200 dark:border-gray-700 relative">
+      {/* Demo Button - positioned in upper right */}
+      {demoLink && (
+        <a
+          href={demoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-4 right-4 px-3 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
+        >
+          {buttonText}
+        </a>
+      )}
+      
       <div className="mb-4">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
           {title}

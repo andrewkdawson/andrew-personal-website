@@ -1,5 +1,6 @@
 import { Hero } from '@/components/Hero';
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 /**
  * Home Page
@@ -8,6 +9,7 @@ import { ContentSection } from '@/components/ContentSection';
  * - Update the hero text (line ~20)
  * - Change the intro paragraph (line ~25-28)
  * - Modify the "Currently" and "Studying" sections (lines ~35-45)
+ * - Update image paths - add your images to /public folder
  * 
  * Location: app/page.tsx
  * 
@@ -17,52 +19,85 @@ import { ContentSection } from '@/components/ContentSection';
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      {/* Hero Section */}
-      <Hero title="Aloha, I'm Andrew" />
+      {/* Header Image with Overlay Content */}
+      {/* 
+        EDIT IMAGE PATH:
+        Add your landscape image to the /public folder and update the path below.
+        Example: if your image is /public/landscape.jpg, use "/landscape.jpg"
+      */}
+      <div className="relative w-full min-h-screen flex flex-col">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/landscape.jpg"
+            alt="Landscape"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40 dark:bg-black/50"></div>
+        </div>
 
-      {/* Intro Paragraph Section */}
-      <ContentSection className="mb-12">
-        <div className="prose prose-lg dark:prose-invert max-w-none">
+        {/* Overlay Content */}
+        <div className="relative z-10 flex-1 flex flex-col">
+          {/* Hero Section */}
           {/* 
-            EDIT THIS PARAGRAPH:
-            Replace the text below with your own introduction.
-            This is a starter paragraph based on the resume - feel free to customize it!
+            EDIT IMAGE PATH:
+            Add your portrait image to the /public folder and update the path below.
+            Example: if your image is /public/andrew-portrait.jpg, use "/andrew-portrait.jpg"
           */}
-          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-            I'm Andrew Kwon Dawson — a product-focused MechE + CS student at Duke University 
-            studying Product Management and Innovation. I build user-centered products, lead 
-            student teams, and mentor aspiring product managers.
-          </p>
-        </div>
-      </ContentSection>
+          <Hero 
+            title="Aloha, I'm Andrew!" 
+            imageSrc="/headshot.jpeg"
+            imageAlt="Andrew Kwon Dawson"
+          />
 
-      {/* Status Section */}
-      <ContentSection className="mb-16">
-        <div className="space-y-6">
-          {/* Currently Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              Currently:
-            </h2>
-            <p className="text-base text-gray-700 dark:text-gray-300 font-medium">
-              Product Management Fellow @ Christensen Family Center for Innovation
-            </p>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 ml-4">
-              • Co-led launch of Duke Product Lab; mentor 20+ student PMs; oversaw hiring & onboarding for inaugural cohort.
-            </p>
-          </div>
+          {/* Intro Paragraph Section */}
+          <ContentSection className="mb-12">
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              {/* 
+                EDIT THIS PARAGRAPH:
+                Replace the text below with your own introduction.
+                This is a starter paragraph based on the resume - feel free to customize it!
+              */}
+              <p className="text-lg md:text-xl text-white leading-relaxed mb-8 drop-shadow-lg">
+                I'm a product-focused Master of Engineering Management student at Duke University. 
+                Raised in Honolulu, Hawai'i, I find purpose in building products with 
+                aloha, the philosophy and love and empathy that I was taught to live by.            
+              </p>
+            </div>
+          </ContentSection>
 
-          {/* Studying Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              Studying:
-            </h2>
-            <p className="text-base text-gray-700 dark:text-gray-300">
-              <span className="font-medium">Duke University</span> — MEM ('26), BS Mechanical Engineering & BA Computer Science ('25)
-            </p>
-          </div>
+          {/* Status Section */}
+          <ContentSection className="mb-16">
+            <div className="space-y-6">
+              {/* Currently Section */}
+              <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-gray-700/50 shadow-xl">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Currently: Product Management Fellow @ Christensen Family Center for Innovation
+                </h2>
+                <p className="text-base text-gray-700 dark:text-gray-300">
+                Co-led launch of Duke Product Lab; mentor 20+ student PMs; 
+                oversaw hiring & onboarding for inaugural cohort.
+                </p>
+              </div>
+
+              {/* Studying Section */}
+              <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-gray-700/50 shadow-xl">
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  Studying: Duke University
+                </h2>
+                <p className="text-base text-gray-700 dark:text-gray-300">
+                  Master of Engineering Management ('26)
+                  <br />
+                  B.S. Mechanical Engineering & B.A. Computer Science ('25)
+                </p>
+              </div>
+            </div>
+          </ContentSection>
         </div>
-      </ContentSection>
+      </div>
     </main>
   );
 }
