@@ -53,7 +53,7 @@ const mediaItems: MediaItem[] = [
     type: 'image',
     src: '/about/sunset-dog.jpg',
     alt: 'Andrew walking his dog at sunset by the ocean',
-    caption: 'Evening walks with my dog on the west side.',
+    caption: 'Sunset walks with my dog Barkley.',
   },
   // Cameron Indoor / basketball photo – save as /public/about/cameron-intramurals.jpg
   {
