@@ -11,7 +11,7 @@ export default function FirstCitizensExperience() {
           Raleigh, NC · May 2025 – Sep 2025
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             At First Citizens, I joined the Commercial Digital team at a moment when there were far
             more ideas than capacity. My work focused on bringing clarity to that chaos—tracking

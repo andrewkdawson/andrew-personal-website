@@ -11,7 +11,7 @@ export default function FantasyPowerRankingsProject() {
           Mini-Project · 2025
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             Fantasy Power Rankings is a small web app for creating custom fantasy team power
             rankings. It pulls in league data and gives commissioners an easier way to sort teams

@@ -1,4 +1,5 @@
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 export default function MusicMadnessProject() {
   return (
@@ -11,7 +12,7 @@ export default function MusicMadnessProject() {
           Personal Project · 2025
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             Music Madness is an interactive web app that generates head-to-head tournament brackets
             from an artist&apos;s discography, letting users pick winners round by round until a
@@ -21,7 +22,7 @@ export default function MusicMadnessProject() {
           <p>
             I love music and bracket debates, so this project was a way to combine both. I wanted
             something where a group could sit on the couch, search any artist on Spotify, and
-            instantly get a bracket that feels &quot;real&quot; enough to argue about—but simple
+            instantly get a bracket that feels &quot;real&quot; enough to argue about, but simple
             enough that anyone can jump in without a tutorial.
           </p>
         </section>
@@ -55,6 +56,18 @@ export default function MusicMadnessProject() {
               readable bracket view, and finally into a celebratory champion modal with artwork and
               quick links.
             </p>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <div className="relative w-full max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/music-madness.jpg"
+              alt="Music Madness user flow diagram showing the three main screens"
+              width={1600}
+              height={900}
+              className="w-full h-auto object-cover"
+            />
           </div>
         </section>
 

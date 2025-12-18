@@ -35,42 +35,42 @@ export default function Experience() {
       organization: 'Christensen Family Center for Innovation',
       location: 'Durham, NC',
       dateRange: 'Jan 2025 – Present',
-      href: '/experience/product-management-fellow-cfci',
+      href: '/experience/cfci',
     },
     {
       title: 'Product Manager',
       organization: 'GameRun',
       location: 'Durham, NC',
       dateRange: 'Sep 2025 – Dec 2025',
-      href: '/experience/product-manager-gamerun',
+      href: '/experience/gamerun',
     },
     {
       title: 'Project Management Intern',
       organization: 'First Citizens Bank',
       location: 'Raleigh, NC',
       dateRange: 'May 2025 – Sep 2025',
-      href: '/experience/project-management-intern-first-citizens',
+      href: '/experience/first-citizens',
     },
     {
       title: 'Product Manager',
       organization: 'BabyBumps',
       location: 'Durham, NC',
       dateRange: 'Sep 2024 – Dec 2024',
-      href: '/experience/product-manager-babybumps',
+      href: '/experience/babybumps',
     },
     {
       title: 'Project Engineering Intern',
       organization: 'Ameresco',
       location: 'Columbia, MD',
       dateRange: 'May 2024 – Aug 2024',
-      href: '/experience/project-engineering-intern-ameresco',
+      href: '/experience/ameresco',
     },
     {
       title: 'Mechanical Engineering Intern',
       organization: 'Makai Ocean Engineering',
       location: 'Waimanalo, HI',
       dateRange: 'May 2023 – Aug 2023',
-      href: '/experience/mechanical-engineering-intern-makai',
+      href: '/experience/makai',
     },
   ];
 
@@ -81,14 +81,14 @@ export default function Experience() {
       organization: 'Personal Project',
       location: 'Durham, NC',
       dateRange: '2025',
-      href: '/experience/project-music-madness',
+      href: '/experience/music-madness',
     },
     {
       title: 'Fantasy Power Rankings',
       organization: 'Personal Project',
       location: 'Durham, NC',
       dateRange: '2025',
-      href: '/experience/project-fantasy-power-rankings',
+      href: '/experience/fantasy-power-rankings',
     },
   ];
 
@@ -100,14 +100,14 @@ export default function Experience() {
       organization: "Duke Hui 'O Hawai'i",
       location: 'Durham, NC',
       dateRange: 'Dec 2023 – May 2025',
-      href: '/experience/founder-president-duke-hui-o-hawaii',
+      href: '/experience/hui-o-hawaii',
     },
     {
       title: 'Director of Programming',
       organization: 'Coach2Inspire',
       location: 'Durham, NC',
       dateRange: 'Sep 2021 – Apr 2025',
-      href: '/experience/director-of-programming-coach2inspire',
+      href: '/experience/coach2inspire',
     },
   ];
 

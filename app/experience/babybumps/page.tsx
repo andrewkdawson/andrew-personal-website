@@ -1,4 +1,5 @@
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 export default function BabyBumpsExperience() {
   return (
@@ -11,11 +12,11 @@ export default function BabyBumpsExperience() {
           Durham, NC · Sep 2024 – Dec 2024
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             BabyBumps was one of the highlights of 2024 for me. Through the Christensen Family
             Center for Innovation, I joined founder Dr. Victoria Fritz and fellow PM Ellie Kang to
-            build a product for families navigating surrogacy—an experience that is emotionally
+            build a product for families navigating surrogacy, an experience that is emotionally
             intense, highly regulated, and often confusing for everyone involved.
           </p>
           <p>
@@ -24,8 +25,8 @@ export default function BabyBumpsExperience() {
             But once we started talking with surrogates and intended parents, we heard loud and
             clear that the metaphor didn&apos;t match how they wanted to be seen or how they made
             decisions. Those interviews pushed us to pivot toward a new vision: a calm, guided hub
-            for education, expectations, and next steps—the center of surrogacy instead of a swipe
-            experience.
+            for education, expectations, and next steps. The "central nucleus for surrogacy," 
+            instead of a swipe experience, became the product vision.
           </p>
           <p>
             As PM, I helped lead that pivot. I shaped the product vision, broke work into two
@@ -36,16 +37,28 @@ export default function BabyBumpsExperience() {
           </p>
           <p>
             The work taught me to be comfortable with uncertainty, to communicate clearly across
-            disciplines, and—most importantly—to not fall in love with a single clever idea. The
+            disciplines, and, most importantly, to not fall in love with a single clever idea. The
             most rewarding moments were the conversations with surrogates and families, knowing
             that thoughtful product decisions could make a deeply personal journey feel a little
             more supported.
           </p>
         </section>
 
+        <section className="mb-10">
+          <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/babybumps.jpg"
+              alt="BabyBumps - The central nucleus for surrogacy"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </section>
+
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Project Overview
+            Links
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-2">
             For more detail on the surrogacy journey redesign, you can reference the original
@@ -58,6 +71,18 @@ export default function BabyBumpsExperience() {
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
             View the project overview
+          </a>
+
+          <p className="text-gray-700 dark:text-gray-300 mb-2 mt-6">
+            To see what we presented in our final demo, you can reference our slide deck:
+          </p>
+          <a
+            href="https://docs.google.com/presentation/d/1ns5x6OcehUii2GfmwB44be4vB2UlE08hc8Rgn9QlrEY/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            View the demo slide deck
           </a>
         </section>
       </ContentSection>

@@ -22,7 +22,7 @@ export default function GunnerPoolExperience() {
           Remote · Dec 2025 – Present
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           {/* EDIT THIS NARRATIVE */}
           <p>
             GunnerPool started as a simple idea between friends who were obsessed with fantasy

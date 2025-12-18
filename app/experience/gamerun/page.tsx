@@ -15,7 +15,7 @@ export default function GameRunExperience() {
           Durham, NC · Sep 2025 – Dec 2025
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             GameRun was my first time owning a product that blended elite sports and AI. I spent a
             lot of the early weeks just listening—sitting with coaches, asking college and

@@ -21,7 +21,7 @@ export default function CfciFellowExperience() {
           Durham, NC · Jan 2025 – Present
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             As a Product Management Fellow at CFCI, I’ve had the chance to help build Duke’s Product
             Lab from the ground up. A big part of my work has been designing structure where there

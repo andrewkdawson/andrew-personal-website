@@ -1,4 +1,5 @@
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 export default function AmerescoExperience() {
   return (
@@ -11,7 +12,7 @@ export default function AmerescoExperience() {
           Columbia, MD · May 2024 – Aug 2024
         </p>
 
-        <section className="prose prose-lg dark:prose-invert max-w-none mb-10">
+        <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             My summer at Ameresco was an immersion in federal-scale renewable energy work. As a
             Project Engineering Intern, I joined the team delivering Energy Savings Performance
@@ -32,14 +33,32 @@ export default function AmerescoExperience() {
           </p>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Things I&apos;d Like to Add
+        <section className="mb-10">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Photos
           </h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
-            <li>Schematics or diagrams (with sensitive details removed)</li>
-            <li>Before/after comparisons of system performance</li>
-          </ul>
+
+          <div className="space-y-6">
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/ameresco-dc.jpg"
+                alt="Ameresco team in Washington D.C."
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/ameresco-vest.jpg"
+                alt="Ameresco safety equipment"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </section>
       </ContentSection>
     </main>

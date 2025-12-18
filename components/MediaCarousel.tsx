@@ -67,7 +67,7 @@ const mediaItems: MediaItem[] = [
     type: 'video',
     src: '/about/duke-gym.mp4',
     alt: 'Basketball court at Duke',
-    caption: 'My meditation: shooting hoops and dunking.',
+    caption: 'My meditation: shooting hoops in an empty gym.',
   },
 ];
 
