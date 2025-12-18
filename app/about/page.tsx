@@ -1,5 +1,4 @@
 import { ContentSection } from '@/components/ContentSection';
-import GoodreadsWidget from '@/components/GoodreadsWidget';
 import { MediaCarousel } from '@/components/MediaCarousel';
 
 /**
