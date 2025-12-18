@@ -58,10 +58,24 @@ export default function About() {
                 working with BabyBumps, a surrogacy startup, and GameRun, a
                 sports-tech AI startup.
               </p>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
                 Outside the classroom, I’m a former collegiate basketball and
                 water polo recruit who still loves all things sports, and I’m
                 passionate about storytelling, whether through books, film, or music.
+                I'm an avid reader with an unhealthy love for the Phoenix Suns, and
+                I'm faith-driven, striving to keep God first in all aspects of life.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              Check out my{' '}
+              <a
+                href="https://www.goodreads.com/andrewkdawson"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline dark:text-blue-400"
+              >
+                Goodreads
+              </a>{' '}
+              to see what I'm reading!
               </p>
             </div>
           </section>

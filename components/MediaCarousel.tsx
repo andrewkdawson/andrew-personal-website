@@ -34,25 +34,20 @@ type MediaItem =
 // EDIT THIS ARRAY: add or remove images/videos here.
 // Place your files in /public (e.g., /public/about/headshot-1.jpg)
 const mediaItems: MediaItem[] = [
+  // Graduation photo – save this image as /public/about/duke-grad-lei.jpg
   {
     type: 'image',
-    src: '/headshot.jpeg', // main portrait
-    alt: 'Andrew Kwon Dawson',
-    caption: 'At Duke, bringing a bit of Hawaiʻi to Durham.',
+    src: '/about/duke-grad-lei.jpg',
+    alt: 'Andrew at Duke Pratt graduation wearing lei',
+    caption: 'Graduation from Duke Pratt School of Engineering.',
   },
-  // Example additional items (update or replace these):
-  // {
-  //   type: 'image',
-  //   src: '/about/basketball.jpg',
-  //   alt: 'Andrew playing basketball',
-  //   caption: 'Coaching and playing basketball in Durham.',
-  // },
-  // {
-  //   type: 'video',
-  //   src: '/about/music-madness-demo.mp4',
-  //   alt: 'Music Madness demo',
-  //   caption: 'Quick walkthrough of the Music Madness project.',
-  // },
+  // Basketball gym video – save this as /public/about/duke-gym.mp4
+  {
+    type: 'video',
+    src: '/about/duke-gym.mp4',
+    alt: 'Basketball court at Duke',
+    caption: 'Where I still spend too much time shooting hoops.',
+  },
 ];
 
 export function MediaCarousel() {

@@ -22,8 +22,8 @@ export default function Contact() {
         <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
           {/* EDIT THIS PARAGRAPH */}
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-            I'm always open to connecting with fellow product managers, engineers, and 
-            anyone interested in building great products. Feel free to reach out using the form below.
+            I'm always open to connecting with fellow product managers, readers, sports fans,
+            and anyone interested in building great products. Feel free to reach out using the form below!
           </p>
         </div>
 
