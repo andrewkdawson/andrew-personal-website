@@ -24,9 +24,9 @@ const geistMono = Geist_Mono({
  * Location: app/layout.tsx
  */
 export const metadata: Metadata = {
-  title: "Andrew Kwon Dawson | Product Manager & Engineer",
-  description: "Product-focused MechE + CS student at Duke University. Building user-centered products and mentoring aspiring product managers.",
-  keywords: ["product management", "engineering", "Duke University", "Andrew Kwon Dawson"],
+  title: "Andrew Kwon Dawson",
+  description: "Product-focused Master of Engineering Management student at Duke University.",
+  keywords: ["product management", "engineering", "Duke University", "Andrew Dawson", "Andrew Kwon Dawson", "Hawaii"],
 };
 
 export default function RootLayout({
