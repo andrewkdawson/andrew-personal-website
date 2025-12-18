@@ -22,25 +22,6 @@ export default function About() {
           About Me
         </h1>
 
-        {/* Short Bio Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            {/* EDIT THIS HEADING */}
-            Bio
-          </h2>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            {/* 
-              EDIT THIS PARAGRAPH:
-              Write a short, punchy bio (2-3 sentences) that introduces who you are.
-            */}
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm a product manager and engineer passionate about building user-centered 
-              solutions. Currently pursuing my Master of Engineering Management at Duke 
-              while mentoring the next generation of product managers.
-            </p>
-          </div>
-        </section>
-
         {/* Longer Biography Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
@@ -54,20 +35,31 @@ export default function About() {
               Share your background, what drives you, your journey, etc.
             */}
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Born and raised in Honolulu, Hawai'i, I've always been drawn to the intersection 
-              of technology and human-centered design. My dual degrees in Mechanical Engineering 
-              and Computer Science at Duke have given me a unique perspective on building products 
-              that solve real problems.
+              Growing up in Hawai’i, I was taught to live with aloha, 
+              a philosophy of love, empathy, and responsibility to care 
+              for others. These values shape how I see technology: not 
+              just as innovation, but as a way to connect and improve lives.
+              That perspective drew me to product management, where 
+              I’ve found purpose in the intersection of technology and the 
+              human experience.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Through my work at Duke Product Lab, GameRun, and other projects, I've learned 
-              that great products start with understanding users deeply. I'm passionate about 
-              mentoring others and creating spaces where people can thrive, whether that's 
-              through product work or community building.
+              Currently, I’m pursuing my Master of Engineering Management 
+              at Duke, adding hands-on learning in strategy, product development, 
+              and leadership to my technical background from my undergraduate 
+              double major in Mechanical Engineering and Computer Science.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              As a Product Management Fellow for the Christensen Family 
+              Center for Innovation, I mentor aspiring PMs and helped lead the 
+              launch of Duke Product Lab. I have hands-on product experience 
+              working with BabyBumps, a surrogacy startup, and GameRun, a 
+              sports-tech AI startup.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I'm not building products, you'll find me coaching youth sports, organizing 
-              events for the Hawaiian community at Duke, or exploring the outdoors.
+              Outside the classroom, I’m a former collegiate basketball and 
+              water polo recruit who still loves all things sports, and I’m 
+              passionate about storytelling, whether through books, film, or music.
             </p>
           </div>
         </section>
