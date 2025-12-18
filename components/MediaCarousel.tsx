@@ -60,14 +60,14 @@ const mediaItems: MediaItem[] = [
     type: 'image',
     src: '/about/cameron-intramurals.jpg',
     alt: 'Andrew on the court after an intramural basketball game',
-    caption: 'Intramural hoops at Cameron Indoor.',
+    caption: 'My greatest accomplishment: winning the intramural championship in Cameron Indoor.',
   },
   // Basketball gym video – save this as /public/about/duke-gym.mp4
   {
     type: 'video',
     src: '/about/duke-gym.mp4',
     alt: 'Basketball court at Duke',
-    caption: 'Where I still spend too much time shooting hoops.',
+    caption: 'Where I reset by shooting hoops and working on my dunk package.',
   },
 ];
 
