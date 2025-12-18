@@ -64,7 +64,7 @@ export default function Home() {
               <p className="text-lg md:text-xl text-white leading-relaxed mb-8 drop-shadow-lg">
                 I'm a product-focused Master of Engineering Management student at Duke University. 
                 Raised in Honolulu, Hawai'i, I find purpose in building products with 
-                aloha, the philosophy and love and empathy that I was taught to live by.            
+                aloha, the philosophy of love and empathy that I was taught to live by.            
               </p>
             </div>
           </ContentSection>
