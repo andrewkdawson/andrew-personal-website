@@ -41,6 +41,27 @@ const mediaItems: MediaItem[] = [
     alt: 'Andrew at Duke Pratt graduation wearing lei',
     caption: 'Graduation from Duke Pratt School of Engineering.',
   },
+  // Waterfall / hiking photo – save as /public/about/waterfall.jpg
+  {
+    type: 'image',
+    src: '/about/hike.jpg',
+    alt: 'Andrew on a hike in Hawaiʻi',
+    caption: 'Back home in Hawaiʻi, recharging outdoors.',
+  },
+  // Sunset with dog photo – save as /public/about/sunset-dog.jpg
+  {
+    type: 'image',
+    src: '/about/sunset-dog.jpg',
+    alt: 'Andrew walking his dog at sunset by the ocean',
+    caption: 'Evening walks with my dog on the west side.',
+  },
+  // Cameron Indoor / basketball photo – save as /public/about/cameron-intramurals.jpg
+  {
+    type: 'image',
+    src: '/about/cameron-intramurals.jpg',
+    alt: 'Andrew on the court after an intramural basketball game',
+    caption: 'Intramural hoops at Cameron Indoor.',
+  },
   // Basketball gym video – save this as /public/about/duke-gym.mp4
   {
     type: 'video',
