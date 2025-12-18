@@ -17,12 +17,13 @@ export function Footer() {
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-auto">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-
-          <div className="text-sm text-gray-600 dark:text-gray-400">
-            © {currentYear} Andrew Kwon Dawson. All rights reserved.
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0">
+          <div className="flex flex-col items-center md:items-start space-y-1">
+            <div className="text-sm text-gray-600 dark:text-gray-400">
+            Built from scratch with Next.js, React, and Tailwind CSS.
+            </div>
           </div>
-          
+
           {/* Text-only Social Media Links */}
           <div className="flex items-center space-x-6">
             {socialLinks.map((social) => (
@@ -37,7 +38,6 @@ export function Footer() {
               </a>
             ))}
           </div>
-
         </div>
       </div>
     </footer>

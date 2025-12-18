@@ -1,25 +1,23 @@
 /**
  * ExperienceCard Component
- * 
- * Displays a single work experience or leadership role.
- * 
+ *
+ * Displays a single work experience, project, or leadership role as a clickable card.
+ *
  * EDIT THIS FILE TO:
  * - Change card styling
  * - Modify date format
- * - Update bullet point styling
- * - Change demo button styling
- * 
+ * - Update hover / focus behavior
+ *
  * Location: components/ExperienceCard.tsx
  */
+import Link from 'next/link';
+
 interface ExperienceCardProps {
   title: string;
   organization: string;
   location: string;
   dateRange: string;
-  bullets: string[];
-  isLeadership?: boolean;
-  demoLink?: string;
-  buttonText?: string;
+  href: string;
 }
 
 export function ExperienceCard({
@@ -27,49 +25,33 @@ export function ExperienceCard({
   organization,
   location,
   dateRange,
-  bullets,
-  isLeadership = false,
-  demoLink,
-  buttonText = 'Demo',
+  href,
 }: ExperienceCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200 dark:border-gray-700 relative">
-      {/* Demo Button - positioned in upper right */}
-      {demoLink && (
-        <a
-          href={demoLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute top-4 right-4 px-3 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-md hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors"
-        >
-          {buttonText}
-        </a>
-      )}
-      
-      <div className="mb-4">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-          {title}
-        </h3>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 text-sm text-gray-600 dark:text-gray-400">
-          <span className="font-medium">{organization}</span>
-          <span className="hidden sm:inline">•</span>
-          <span>{location}</span>
-          <span className="hidden sm:inline">•</span>
-          <span>{dateRange}</span>
+    <Link
+      href={href}
+      className="block bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+    >
+      <div className="p-6 flex flex-col h-full">
+        <div className="mb-3">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+            {title}
+          </h3>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <span className="font-medium">{organization}</span>
+            <span className="hidden sm:inline">•</span>
+            <span>{location}</span>
+            <span className="hidden sm:inline">•</span>
+            <span>{dateRange}</span>
+          </div>
         </div>
+
+        {/* Small prompt to indicate the card is clickable */}
+        <p className="mt-auto text-sm text-blue-600 dark:text-blue-400 font-medium">
+          Read the story →
+        </p>
       </div>
-      <ul className="space-y-2">
-        {bullets.map((bullet, index) => (
-          <li
-            key={index}
-            className="text-gray-700 dark:text-gray-300 leading-relaxed flex items-start"
-          >
-            <span className="text-blue-600 dark:text-blue-400 mr-2 mt-1.5 flex-shrink-0">•</span>
-            <span>{bullet}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    </Link>
   );
 }
 

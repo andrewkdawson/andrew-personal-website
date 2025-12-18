@@ -1,4 +1,6 @@
 import { ContentSection } from '@/components/ContentSection';
+import GoodreadsWidget from '@/components/GoodreadsWidget';
+import { MediaCarousel } from '@/components/MediaCarousel';
 
 /**
  * About Page
@@ -22,70 +24,60 @@ export default function About() {
           About Me
         </h1>
 
-        {/* Longer Biography Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            {/* EDIT THIS HEADING */}
-            My Story
-          </h2>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            {/* 
-              EDIT THIS SECTION:
-              Tell your story here. This can be multiple paragraphs.
-              Share your background, what drives you, your journey, etc.
-            */}
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Growing up in Hawai’i, I was taught to live with aloha, 
-              a philosophy of love, empathy, and responsibility to care 
-              for others. These values shape how I see technology: not 
-              just as innovation, but as a way to connect and improve lives.
-              That perspective drew me to product management, where 
-              I’ve found purpose in the intersection of technology and the 
-              human experience.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Currently, I’m pursuing my Master of Engineering Management 
-              at Duke, adding hands-on learning in strategy, product development, 
-              and leadership to my technical background from my undergraduate 
-              double major in Mechanical Engineering and Computer Science.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              As a Product Management Fellow for the Christensen Family 
-              Center for Innovation, I mentor aspiring PMs and helped lead the 
-              launch of Duke Product Lab. I have hands-on product experience 
-              working with BabyBumps, a surrogacy startup, and GameRun, a 
-              sports-tech AI startup.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Outside the classroom, I’m a former collegiate basketball and 
-              water polo recruit who still loves all things sports, and I’m 
-              passionate about storytelling, whether through books, film, or music.
-            </p>
-          </div>
-        </section>
+        <div className="flex flex-col md:flex-row gap-10 items-start">
+          {/* Left: Story / Text */}
+          <section className="md:flex-1 mb-12">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+              {/* EDIT THIS HEADING */}
+              My Story
+            </h2>
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              {/* 
+                EDIT THIS SECTION:
+                Tell your story here. This can be multiple paragraphs.
+                Share your background, what drives you, your journey, etc.
+              */}
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Growing up in Hawai’i, I was taught to live with aloha,
+                a philosophy of love, empathy, and responsibility to care
+                for others. These values shape how I see technology: not
+                just as innovation, but as a way to connect and improve lives.
+                That perspective drew me to product management, where
+                I’ve found purpose in the intersection of technology and the
+                human experience.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Currently, I’m pursuing my Master of Engineering Management
+                at Duke, adding hands-on learning in strategy, product development,
+                and leadership to my technical background from my undergraduate
+                double major in Mechanical Engineering and Computer Science.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                As a Product Management Fellow for the Christensen Family
+                Center for Innovation, I mentor aspiring PMs and helped lead the
+                launch of Duke Product Lab. I have hands-on product experience
+                working with BabyBumps, a surrogacy startup, and GameRun, a
+                sports-tech AI startup.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                Outside the classroom, I’m a former collegiate basketball and
+                water polo recruit who still loves all things sports, and I’m
+                passionate about storytelling, whether through books, film, or music.
+              </p>
+            </div>
+          </section>
 
-        {/* Interests & Hobbies Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            {/* EDIT THIS HEADING */}
-            Interests & Hobbies
-          </h2>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          {/* Right: Media Carousel */}
+          <aside className="md:w-80 w-full">
             {/* 
-              EDIT THIS SECTION:
-              List your interests, hobbies, and passions.
-              You can use a list, paragraphs, or any format you prefer.
+              EDIT MEDIA:
+              Open components/MediaCarousel.tsx and update the `mediaItems` array
+              to point to your own photos and videos.
             */}
-            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-              <li>Basketball and water polo (former collegiate recruit)</li>
-              <li>Phoenix Suns fan</li>
-              <li>Road trip karaoke</li>
-              <li>Movie nights</li>
-              <li>Hawaiian culture and community building</li>
-              <li>Youth coaching and mentorship</li>
-            </ul>
-          </div>
-        </section>
+            <MediaCarousel />
+          </aside>
+        </div>
+
 
         {/* 
           ADD MORE SECTIONS HERE:

@@ -24,87 +24,71 @@ export default function Experience() {
   // EDIT THIS ARRAY to add/remove/modify work experience entries
   const workExperience = [
     {
-      title: 'Founder',
+      title: 'Co-Founder',
       organization: 'GunnerPool',
       location: 'Remote',
       dateRange: 'Dec 2025 – Present',
-      demoLink: 'https://drive.google.com/file/d/1MICAbfdNKZx-Avd9P2dwLdcCdoGhvwx1/view?usp=drive_link',
-      buttonText: 'See Prototype Demo!',
-      bullets: [
-        'Building a tournament-based fantasy sports application that allows users to create and join leagues, draft players, and compete against friends',
-      ],
+      href: '/experience/gunnerpool',
     },
     {
       title: 'Product Management Fellow',
       organization: 'Christensen Family Center for Innovation',
       location: 'Durham, NC',
       dateRange: 'Jan 2025 – Present',
-      demoLink: 'https://cfci.pratt.duke.edu/2025/11/19/student-highlight-andrew-dawson/',
-      buttonText: 'Student Highlight: Andrew Dawson',
-      bullets: [
-        'Co-led launch of Duke Product Lab, pairing 4+ student teams with industry partners to build real tech products',
-        'Mentoring 20+ student product managers on core skills, including user research, KPIs, and product strategy',
-        "Oversaw hiring and onboarding of 15+ student PMs, designers, and engineers for Product Lab's inaugural cohort",
-      ],
+      href: '/experience/product-management-fellow-cfci',
     },
     {
       title: 'Product Manager',
       organization: 'GameRun',
       location: 'Durham, NC',
       dateRange: 'Sep 2025 – Dec 2025',
-      demoLink: 'https://drive.google.com/file/d/1xrUuopvoFW8OudjYEV6QFI-Hprhdll5X/view?usp=drive_link',
-      buttonText: 'See Final Demo!',
-      bullets: [
-        'Led development of an AI-driven sports analytics tool enabling elite baseball athletes to visualize progress, track performance, and receive data-backed, personalized training insights',
-        'Conducted 15+ user discovery interviews with athletes and coaches to identify usability and visualization needs',
-        'Directed 5+ prototype iterations in Figma and Lovable, translating user insights into high-impact UX refinements',
-        'Defined roadmap and 4 core MVP success metrics to align design and engineering teams for launch readiness',
-      ],
+      href: '/experience/product-manager-gamerun',
     },
     {
       title: 'Project Management Intern',
       organization: 'First Citizens Bank',
       location: 'Raleigh, NC',
       dateRange: 'May 2025 – Sep 2025',
-      bullets: [
-        'Supported the Commercial Digital Program, maintaining documentation for 8+ concurrent product initiatives',
-        'Independently developed a prioritization framework adopted by Enterprise Project Office leadership, reducing project intake time by ~20% through strategic, technical, and customer impact criteria',
-        'Assisted with backlog refinement of 100+ Jira tickets, improving sprint readiness for 2026 product cycle',
-      ],
+      href: '/experience/project-management-intern-first-citizens',
     },
     {
       title: 'Product Manager',
       organization: 'BabyBumps',
       location: 'Durham, NC',
       dateRange: 'Sep 2024 – Dec 2024',
-      demoLink: 'https://dukecfci.notion.site/Reimagining-Surrogacy-with-a-Guided-Online-Journey-22b478a62ca181c384a2f333412a3ff1',
-      buttonText: 'Project Overview',
-      bullets: [
-        'Delivered a functional MVP for a surrogacy startup in two 4-week sprints, from Figma wireframes to JavaScript web app, enabling early testing (10+ users) and validating product-market fit',
-        'Drove product vision and strategy, developing a stakeholder-aligned roadmap to meet user and business needs',
-        'Managed cross-functional team of 4 engineers and designers, driving on-time delivery and stakeholder alignment',
-        'Conducted 12+ user research sessions, translating feedback into prioritized feature updates',
-      ],
+      href: '/experience/product-manager-babybumps',
     },
     {
       title: 'Project Engineering Intern',
       organization: 'Ameresco',
       location: 'Columbia, MD',
       dateRange: 'May 2024 – Aug 2024',
-      bullets: [
-        'Managed budgets, timelines, and scope for 3 contracted renewable energy projects valued at $100M+ each',
-        'Analyzed 10,000+ climate and energy data points to identify performance trends and inform key project metrics',
-      ],
+      href: '/experience/project-engineering-intern-ameresco',
     },
     {
       title: 'Mechanical Engineering Intern',
       organization: 'Makai Ocean Engineering',
       location: 'Waimanalo, HI',
       dateRange: 'May 2023 – Aug 2023',
-      bullets: [
-        'Designed and assembled 100+ subsea components and prototype systems using CAD software',
-        'Performed assembly, testing, and lean manufacturing of hardware components, improving efficiency by ~15%',
-      ],
+      href: '/experience/mechanical-engineering-intern-makai',
+    },
+  ];
+
+  // Projects Data
+  const projects = [
+    {
+      title: 'Music Madness',
+      organization: 'Personal Project',
+      location: 'Durham, NC',
+      dateRange: '2025',
+      href: '/experience/project-music-madness',
+    },
+    {
+      title: 'Fantasy Power Rankings',
+      organization: 'Personal Project',
+      location: 'Durham, NC',
+      dateRange: '2025',
+      href: '/experience/project-fantasy-power-rankings',
     },
   ];
 
@@ -116,21 +100,14 @@ export default function Experience() {
       organization: "Duke Hui 'O Hawai'i",
       location: 'Durham, NC',
       dateRange: 'Dec 2023 – May 2025',
-      bullets: [
-        "Founded organization serving 40+ Duke students promoting diversity and inclusion rooted in Hawaiian culture",
-        'Organized Musubi for Maui fundraiser, raising $1,700+ for the Lahaina wildfire relief efforts',
-        "Established mentorship program matching 100% of incoming Hawai'i freshmen with upperclass mentors",
-      ],
+      href: '/experience/founder-president-duke-hui-o-hawaii',
     },
     {
       title: 'Director of Programming',
       organization: 'Coach2Inspire',
       location: 'Durham, NC',
       dateRange: 'Sep 2021 – Apr 2025',
-      bullets: [
-        'Coached Durham youth teams emphasizing values of leadership, discipline, teamwork, and healthy living',
-        'Managed 15+ committee members, organizing training programs, drill resources, and clinics (50+ participants)',
-      ],
+      href: '/experience/director-of-programming-coach2inspire',
     },
   ];
 
@@ -154,9 +131,26 @@ export default function Experience() {
                 organization={exp.organization}
                 location={exp.location}
                 dateRange={exp.dateRange}
-                bullets={exp.bullets}
-                demoLink={exp.demoLink}
-                buttonText={exp.buttonText}
+                href={exp.href}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8">
+            Projects
+          </h2>
+          <div className="space-y-6">
+            {projects.map((project, index) => (
+              <ExperienceCard
+                key={index}
+                title={project.title}
+                organization={project.organization}
+                location={project.location}
+                dateRange={project.dateRange}
+                href={project.href}
               />
             ))}
           </div>
@@ -175,8 +169,7 @@ export default function Experience() {
                 organization={exp.organization}
                 location={exp.location}
                 dateRange={exp.dateRange}
-                bullets={exp.bullets}
-                isLeadership={true}
+                href={exp.href}
               />
             ))}
           </div>
