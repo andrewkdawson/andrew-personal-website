@@ -1,29 +1,22 @@
-
 import { ContentSection } from '@/components/ContentSection';
 import { WritingCard } from '@/components/WritingCard';
+import { getAllPosts } from '@/lib/posts';
 
 /**
  * Writing Page
  *
- * EDIT THIS FILE TO:
- * - Add or remove writing entries
- * - Update titles, descriptions, and tags
- *
- * Location: app/writing/page.tsx
+ * Automatically generates cards for all Markdown files in the /posts folder.
+ * 
+ * To add a new post:
+ * 1. Write in Word/Docs/Pages
+ * 2. Convert to Markdown (using Pandoc: pandoc file.docx -o file.md)
+ * 3. Add frontmatter at the top of the .md file (see example in /posts folder)
+ * 4. Save as [slug].md in the /posts folder
+ * 5. The card will automatically appear here!
  */
 
 export default function Writing() {
-  // EDIT THIS ARRAY: add new writing entries over time.
-  const posts = [
-    {
-      title: 'Top 10 Books of 2025',
-      description:
-        "I got back into reading this year. Here are my favorite books that I read in 2025.",
-      href: '/writing/top-10-books-2025',
-      tag: 'Books',
-      date: 'December 31, 2025',
-    },
-  ];
+  const posts = getAllPosts();
 
   return (
     <main className="min-h-screen flex flex-col py-12">
@@ -32,22 +25,45 @@ export default function Writing() {
           Writing
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mb-10 max-w-2xl">
-          Stories, essays, insights, and reflections. My creative outlet. 
+          Stories, essays, insights, and reflections. My creative outlet.
         </p>
 
         <section className="mb-16">
-          <div className="space-y-6">
-            {posts.map((post) => (
-              <WritingCard
-                key={post.href}
-                title={post.title}
-                description={post.description}
-                href={post.href}
-                tag={post.tag}
-                date={post.date}
-              />
-            ))}
-          </div>
+          {posts.length === 0 ? (
+            <p className="text-gray-600 dark:text-gray-400">
+              No posts yet. Add a Markdown file to the <code className="text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">posts/</code> folder to get started.
+            </p>
+          ) : (
+            <div className="space-y-6">
+              {posts.map((post) => {
+                // Format date for display (parse as local date to avoid timezone issues)
+                const formattedDate = post.date
+                  ? (() => {
+                      const dateStr = post.date;
+                      // Parse YYYY-MM-DD as local date (not UTC)
+                      const [year, month, day] = dateStr.split('-').map(Number);
+                      const date = new Date(year, month - 1, day);
+                      return date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      });
+                    })()
+                  : '';
+
+                return (
+                  <WritingCard
+                    key={post.slug}
+                    title={post.title}
+                    description={post.excerpt || ''}
+                    href={`/writing/${post.slug}`}
+                    tag={post.tag}
+                    date={formattedDate}
+                  />
+                );
+              })}
+            </div>
+          )}
         </section>
       </ContentSection>
     </main>
