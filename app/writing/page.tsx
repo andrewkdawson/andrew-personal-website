@@ -31,7 +31,7 @@ export default function Writing() {
         <section className="mb-16">
           {posts.length === 0 ? (
             <p className="text-gray-600 dark:text-gray-400">
-              No posts yet. Add a Markdown file to the <code className="text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">posts/</code> folder to get started.
+              No posts yet.
             </p>
           ) : (
             <div className="space-y-6">

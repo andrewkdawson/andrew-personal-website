@@ -25,55 +25,42 @@ export default function GunnerPoolExperience() {
         <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           {/* EDIT THIS NARRATIVE */}
           <p>
-            GunnerPool started as a simple idea between friends who were obsessed with fantasy
-            sports and tournament brackets. I wanted to build a product that felt as fun and
-            competitive as our group chats, while making it easy for casual players to join in
-            without needing to be hardcore stat nerds.
+            Every year, my friends and I play a March Madness fantasy game we call a gunner pool,
+            where the only stat that matters is the cumulative number of points a player scores 
+            throughout the duration of the tournament. The contest relies on both individual and team 
+            success, requiring strategic thinking and creating an immersive experience. This has been
+            so much more fun than making traditional brackets.
+          </p>
+          <p>
+            The problem is that we have to manually track the scores of the tournament on a 
+            spreadsheet, which is tedious and discourages others from making their own pools.
+            To solve this, my co-founder George Fang and I decided to build a web app that 
+            makes gunner pools accessible, simple, and more fun. Our goal is to bring gunner 
+            pools to the masses, rivaling traditional brackets, while expanding to other 
+            tournaments like the CFP or the Masters.
           </p>
           <p>
             As co-founder and product lead, I’ve been responsible for shaping the experience end
-            to end—from early Figma prototypes and user interviews with sports fans, to validating
-            the game structure, onboarding, and scoring system. Most of my time goes into
-            translating scrappy ideas into a roadmap that engineers can actually ship, while
-            constantly testing if the game feels intuitive and fair for first-time users.
+            to end, from early Figma prototypes and user interviews to validating
+            the game structure, onboarding, drafting, and scoring system.
           </p>
           <p>
-            Building GunnerPool has been a reminder that the best products feel like they were
-            designed inside the group chat: simple, expressive, and built around shared rituals
-            like trash talk, upsets, and friendly rivalry.
+            Our plan is to deploy by this year's NCAA tournament in March. I'm excited to share
+            the platform with others and play it myself!
           </p>
-        </section>
-
-        {/* MEDIA SECTION */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Screenshots & Demo
-          </h2>
-          {/* 
-            REPLACE THIS PLACEHOLDER:
-            1. Add images to /public/gunnerpool/
-            2. Duplicate the <figure> block below for each image.
-          */}
-          <div className="grid gap-6 md:grid-cols-2">
-            <figure className="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-900/10 dark:bg-gray-100/5 border border-gray-200 dark:border-gray-800 flex items-center justify-center text-sm text-gray-500 dark:text-gray-400">
-              <span>Add GunnerPool screenshots here (update src in this file).</span>
-            </figure>
-          </div>
         </section>
 
         {/* OPTIONAL VIDEO SECTION */}
-        <section>
+        <section className="mb-10">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Walkthrough Video
+            Low-Fidelity Prototype Demo
           </h2>
-          {/* 
-            To embed a video:
-            - Use a hosted link (YouTube, Loom, etc.) with an iframe
-            OR
-            - Place an .mp4 file in /public/gunnerpool/ and use the <video> tag below.
-          */}
-          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 bg-black/80 text-gray-400 text-sm p-6">
-            <p>Embed a short demo video of the product here.</p>
+          <div className="w-full max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://drive.google.com/file/d/1MICAbfdNKZx-Avd9P2dwLdcCdoGhvwx1/preview"
+              className="w-full aspect-video rounded-lg"
+              allow="autoplay"
+            />
           </div>
         </section>
       </ContentSection>
