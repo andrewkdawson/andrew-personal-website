@@ -36,7 +36,7 @@ export default function MakaiExperience() {
 
             <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/makai.jpg"
+                src="/makai.JPG"
                 alt="Makai Ocean Engineering team on the pier"
                 width={1200}
                 height={800}
@@ -46,7 +46,7 @@ export default function MakaiExperience() {
 
             <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/makai-mill.jpg"
+                src="/makai-mill.JPG"
                 alt="Working on a Bridgeport milling machine at Makai Ocean Engineering"
                 width={1200}
                 height={800}
