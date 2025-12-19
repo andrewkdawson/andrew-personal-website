@@ -1,4 +1,5 @@
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 export default function FirstCitizensExperience() {
   return (
@@ -14,7 +15,7 @@ export default function FirstCitizensExperience() {
         <section className="prose prose-lg dark:prose-invert max-w-none mb-10 space-y-4">
           <p>
             At First Citizens, I joined the Commercial Digital team at a moment when there were far
-            more ideas than capacity. My work focused on bringing clarity to that chaos—tracking
+            more ideas than capacity. My work focused on bringing clarity to that chaos by tracking
             projects, surfacing tradeoffs, and helping leaders make confident decisions about what
             to start, pause, or stop altogether.
           </p>
@@ -27,22 +28,39 @@ export default function FirstCitizensExperience() {
             makes decisions.
           </p>
           <p>
-            Day to day, I lived in Jira—helping refine tickets, untangle dependencies, and make
-            sure sprint boards reflected reality. I left the summer with a much deeper appreciation
+            I left the summer with a much deeper appreciation
             for how process, communication, and tooling all have to work together for a digital
             program to actually ship.
           </p>
         </section>
 
-        <section>
+        <section className="mb-10">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Artifacts to Add
+            Photos
           </h2>
-          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300">
-            <li>Screenshots of the prioritization framework</li>
-            <li>Before/after snapshots of Jira boards</li>
-            <li>Any internal presentations you can safely anonymize</li>
-          </ul>
+          
+          <div className="space-y-6">
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/fcb-team.jpg"
+                alt="First Citizens Bank team"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/fcb-presentation.jpg"
+                alt="First Citizens Bank presentation on product prioritization framework"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+          </div>
         </section>
       </ContentSection>
     </main>

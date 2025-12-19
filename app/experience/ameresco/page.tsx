@@ -34,7 +34,7 @@ export default function AmerescoExperience() {
         </section>
 
         <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             Photos
           </h2>
 

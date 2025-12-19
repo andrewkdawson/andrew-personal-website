@@ -1,4 +1,5 @@
 import { ContentSection } from '@/components/ContentSection';
+import Image from 'next/image';
 
 /**
  * Product Management Fellow (CFCI) Detail Page
@@ -25,37 +26,23 @@ export default function CfciFellowExperience() {
           <p>
             As a Product Management Fellow at CFCI, I’ve had the chance to help build Duke’s Product
             Lab from the ground up. A big part of my work has been designing structure where there
-            wasn’t any before—everything from how teams are staffed, to how we run kickoff
+            wasn’t any before. We had to define everything from how teams are staffed, to how we run kickoff
             workshops, to how we measure whether a project was truly valuable for the partner and
-            for the students.
+            for the students. 
+          </p>
+          <p>
+            One of my key responsibilities is managing the application and hiring process.
+            I personally interviewed and hired all of Product Lab's current product managers, engineers, and designers.
           </p>
           <p>
             My favorite part of the role is mentoring student PMs who are running their very first
-            product cycles. I spend a lot of time in 1:1s helping them scope MVPs, write clear
-            problem statements, and translate messy stakeholder feedback into actionable next
-            sprints. Coaching them forces me to make my own thinking sharper and more intentional.
-          </p>
-          <p>
-            I also work closely with partners and leadership to make sure we’re not just “shipping
-            features” for class credit, but actually building things that will live on after the
-            semester. That has meant saying no to projects that don’t have a clear owner, and
-            pushing for better definitions of success before we ever open a Figma file.
+            product cycles. Coaching these students forces me to make my own thinking sharper and more intentional.
+            I find a great deal of joy and fulfillment in helping them grow and succeed!
           </p>
         </section>
 
         {/* MEDIA PLACEHOLDERS */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Photos & Artifacts
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-lg border border-gray-200 dark:border-gray-800 bg-gray-900/5 dark:bg-gray-100/5 p-6 text-sm text-gray-500 dark:text-gray-400">
-              Add photos from Product Lab sessions, whiteboards, or team workshops here.
-            </div>
-          </div>
-        </section>
-
-        <section>
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
             Links
           </h2>
@@ -71,6 +58,33 @@ export default function CfciFellowExperience() {
               </a>
             </li>
           </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Photos
+          </h2>
+          <div className="space-y-6">
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/cfci-stairs.jpg"
+                alt="CFCI Product Lab team on stairs"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/cfci-classroom.jpg"
+                alt="CFCI Product Lab team in classroom"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </section>
       </ContentSection>
     </main>
