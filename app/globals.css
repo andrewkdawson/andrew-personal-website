@@ -17,8 +17,8 @@
 @theme inline {
   --color-background: var(--color-background);
   --color-foreground: var(--color-foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-open-sans);
+  --font-serif: var(--font-eb-garamond);
 
   /* Legacy Duke Navy Blue color palette */
   --color-duke-navy-50: #E6EBF5;
@@ -44,7 +44,7 @@
   /* Semantic color tokens - Dark mode */
   
   /* Base backgrounds */
-  --color-background: #262626;          /* Main page background */
+  --color-background: #012169;          /* Main page background */
   --color-section: #1e1e1e;             /* Section backgrounds */
   --color-surface: #2a2a2a;             /* Card/surface background */
   --color-elevated: #333333;            /* Elevated surfaces (hover states) */
@@ -56,18 +56,18 @@
   
   /* Accent colors (Duke Blue) */
   --color-accent: #012169;              /* Duke Navy Blue - primary accent */
-  --color-accent-strong: #00539b;       /* Duke Royal Blue - hover/active states */
+  --color-accent-strong: #00539B;       /* Duke Royal Blue - hover/active states */
   
   /* Interactive elements */
-  --color-link: #00539b;                /* Links - Duke Royal Blue (lighter for readability) */
-  --color-link-hover: #3366cc;          /* Link hover state - brighter blue */
+  --color-link: #00539B;                /* Links - Duke Royal Blue */
+  --color-link-hover: #0066CC;          /* Link hover state - brighter Duke Blue */
   
   /* Borders */
   --color-border: #404040;              /* Standard borders */
   --color-border-subtle: #2a2a2a;       /* Subtle borders (dividers) */
   
   /* Focus states */
-  --color-focus: #00539b;               /* Focus ring color - Duke Royal Blue */
+  --color-focus: #00539B;               /* Focus ring color - Duke Royal Blue */
   
   /* Gold (optional, subtle) */
   --color-gold: #f59e0b;                /* Duke gold - use sparingly */
@@ -79,9 +79,14 @@
 }
 
 body {
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-open-sans), 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   background-color: var(--color-background);
   color: var(--color-text-primary);
+}
+
+/* Use EB Garamond for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-eb-garamond), Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Smooth transitions for color changes */

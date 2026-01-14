@@ -34,11 +34,11 @@ export function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-surface border-b border-border backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 bg-accent border-b border-accent-strong backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
-          <Link href="/" className="text-xl font-semibold text-text-primary hover:text-link transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded">
+          <Link href="/" className="text-xl font-bold text-text-primary hover:text-link transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded" style={{fontFamily: 'var(--font-eb-garamond), Georgia, "Times New Roman", Times, serif'}}>
             Andrew Kwon Dawson
           </Link>
 

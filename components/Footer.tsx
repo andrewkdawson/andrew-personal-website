@@ -15,7 +15,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-surface border-t border-border mt-auto">
+    <footer className="bg-accent border-t border-accent-strong mt-auto">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0">
           <div className="flex flex-col items-center md:items-start space-y-1">
