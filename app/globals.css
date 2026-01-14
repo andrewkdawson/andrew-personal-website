@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 /**
- * Global Styles
- * 
- * Duke Navy Blue Theme - Tailwind CSS v4
+ * Global Styles - Duke-themed Semantic Color System
  * 
  * Location: app/globals.css
+ * 
+ * This file defines CSS variables for semantic color tokens that can be
+ * used in Tailwind utilities (via tailwind.config.ts) or directly in CSS.
+ * All colors are designed to meet WCAG AA contrast requirements.
  */
 
 /* Configure class-based dark mode for Tailwind v4 */
@@ -13,12 +15,12 @@
 
 /* Define custom Duke Navy Blue color palette for Tailwind v4 */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Duke Navy Blue color palette */
+  /* Legacy Duke Navy Blue color palette */
   --color-duke-navy-50: #E6EBF5;
   --color-duke-navy-100: #CCD7EB;
   --color-duke-navy-200: #99AFD7;
@@ -33,22 +35,61 @@
 }
 
 :root {
-  --background: #f9fafb;
-  --foreground: #111827;
+  /* Light mode (if needed in future) */
+  --color-background: #f9fafb;
+  --color-foreground: #111827;
 }
 
 .dark {
-  --background: #012169;
-  --foreground: #ffffff;
+  /* Semantic color tokens - Dark mode */
+  
+  /* Base backgrounds */
+  --color-background: #262626;          /* Main page background */
+  --color-section: #1e1e1e;             /* Section backgrounds */
+  --color-surface: #2a2a2a;             /* Card/surface background */
+  --color-elevated: #333333;            /* Elevated surfaces (hover states) */
+  
+  /* Text colors */
+  --color-text-primary: #ffffff;        /* Primary text */
+  --color-text-secondary: #e5e7eb;      /* Secondary text */
+  --color-text-muted: #9ca3af;          /* Muted text (metadata, etc.) */
+  
+  /* Accent colors (Duke Blue) */
+  --color-accent: #012169;              /* Duke Navy Blue - primary accent */
+  --color-accent-strong: #00539b;       /* Duke Royal Blue - hover/active states */
+  
+  /* Interactive elements */
+  --color-link: #00539b;                /* Links - Duke Royal Blue (lighter for readability) */
+  --color-link-hover: #3366cc;          /* Link hover state - brighter blue */
+  
+  /* Borders */
+  --color-border: #404040;              /* Standard borders */
+  --color-border-subtle: #2a2a2a;       /* Subtle borders (dividers) */
+  
+  /* Focus states */
+  --color-focus: #00539b;               /* Focus ring color - Duke Royal Blue */
+  
+  /* Gold (optional, subtle) */
+  --color-gold: #f59e0b;                /* Duke gold - use sparingly */
+  --color-gold-subtle: #fbbf24;         /* Lighter gold for subtle accents */
+  
+  /* Legacy variables for compatibility */
+  --background: var(--color-background);
+  --foreground: var(--color-text-primary);
 }
 
 body {
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
 }
 
-/* Smooth transitions for dark mode */
+/* Smooth transitions for color changes */
 * {
   transition-property: background-color, border-color, color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+/* Focus ring utility - Use with focus:outline-none focus-visible:ring-2 focus-visible:ring-focus */
+/* Example: className="focus:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2 focus-visible:ring-offset-background" */

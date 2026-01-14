@@ -30,28 +30,28 @@ export function WritingCard({
   return (
     <Link
       href={href}
-      className="block bg-white dark:bg-duke-navy-800 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 dark:border-duke-navy-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+      className="block bg-surface rounded-lg shadow-sm hover:shadow-md hover:bg-elevated hover:border-accent/50 transition-all border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-focus"
     >
       <div className="p-6 flex flex-col h-full">
         <div className="mb-3">
           {tag && (
-            <span className="inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 mb-2">
+            <span className="inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full bg-accent/20 text-text-secondary mb-2">
               {tag}
             </span>
           )}
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+          <h3 className="text-xl font-bold text-text-primary mb-1">
             {title}
           </h3>
           {date && (
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
+            <p className="text-xs text-text-muted mb-1">
               {date}
             </p>
           )}
         </div>
-        <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+        <p className="text-sm text-text-secondary leading-relaxed flex-1">
           {description}
         </p>
-        <p className="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium">
+        <p className="mt-4 text-sm text-link font-medium hover:text-link-hover transition-colors">
           Read more →
         </p>
       </div>

@@ -3,11 +3,7 @@ import type { Config } from "tailwindcss";
 /**
  * Tailwind CSS Configuration
  * 
- * EDIT THIS FILE TO:
- * - Add custom colors (e.g., Hawaiian-inspired palette)
- * - Modify spacing, typography, or other design tokens
- * - Add custom plugins
- * 
+ * Duke-themed semantic color system
  * Location: tailwind.config.ts
  */
 
@@ -21,6 +17,49 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Semantic color tokens mapped to CSS variables
+        // Use these tokens instead of raw hex values for maintainability
+        background: {
+          DEFAULT: 'var(--color-background)',
+        },
+        section: {
+          DEFAULT: 'var(--color-section)',
+        },
+        surface: {
+          DEFAULT: 'var(--color-surface)',
+        },
+        elevated: {
+          DEFAULT: 'var(--color-elevated)',
+        },
+        muted: {
+          DEFAULT: 'var(--color-muted)',
+        },
+        accent: {
+          DEFAULT: 'var(--color-accent)',
+          strong: 'var(--color-accent-strong)',
+        },
+        link: {
+          DEFAULT: 'var(--color-link)',
+          hover: 'var(--color-link-hover)',
+        },
+        gold: {
+          DEFAULT: 'var(--color-gold)',
+          subtle: 'var(--color-gold-subtle)',
+        },
+        border: {
+          DEFAULT: 'var(--color-border)',
+          subtle: 'var(--color-border-subtle)',
+        },
+        focus: {
+          DEFAULT: 'var(--color-focus)',
+        },
+        // Text colors
+        text: {
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          muted: 'var(--color-text-muted)',
+        },
+        // Legacy duke-navy palette (kept for backwards compatibility)
         'duke-navy': {
           DEFAULT: '#012169',
           50: '#E6EBF5',
@@ -41,4 +80,3 @@ const config: Config = {
 };
 
 export default config;
-

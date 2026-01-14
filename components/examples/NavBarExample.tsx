@@ -5,16 +5,18 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 /**
- * NavBar Component
+ * NavBar Example Component
  * 
- * EDIT THIS FILE TO:
- * - Change navigation links
- * - Update site title/logo
- * - Modify mobile menu behavior
+ * Demonstrates semantic color token usage:
+ * - bg-surface for navbar background
+ * - border-border for borders
+ * - text-text-primary/secondary for text
+ * - text-link for links
+ * - bg-accent with white text for active state
  * 
- * Location: components/NavBar.tsx
+ * Location: components/examples/NavBarExample.tsx
  */
-export function NavBar() {
+export function NavBarExample() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,7 +40,10 @@ export function NavBar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
-          <Link href="/" className="text-xl font-semibold text-text-primary hover:text-link transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded">
+          <Link 
+            href="/" 
+            className="text-xl font-semibold text-text-primary hover:text-link transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded"
+          >
             Andrew Kwon Dawson
           </Link>
 
@@ -48,10 +53,11 @@ export function NavBar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded ${isActive(link.href)
-                  ? 'text-link border-b-2 border-accent'
-                  : 'text-text-secondary hover:text-link'
-                  }`}
+                className={`px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded ${
+                  isActive(link.href)
+                    ? 'text-text-primary border-b-2 border-accent-strong'
+                    : 'text-text-secondary hover:text-link'
+                }`}
               >
                 {link.label}
               </Link>
@@ -72,7 +78,6 @@ export function NavBar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
-            {/* LinkedIn Icon */}
             <a
               href="https://linkedin.com/in/andrewkdawson"
               target="_blank"
@@ -116,10 +121,11 @@ export function NavBar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus ${isActive(link.href)
-                  ? 'text-text-primary bg-elevated'
-                  : 'text-text-secondary hover:bg-elevated'
-                  }`}
+                className={`block px-3 py-2 text-base font-medium rounded-md transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-focus ${
+                  isActive(link.href)
+                    ? 'text-text-primary bg-elevated'
+                    : 'text-text-secondary hover:bg-elevated'
+                }`}
               >
                 {link.label}
               </Link>
@@ -130,4 +136,3 @@ export function NavBar() {
     </nav>
   );
 }
-

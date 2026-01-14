@@ -1,18 +1,19 @@
-/**
- * ExperienceCard Component
- *
- * Displays a single work experience, project, or leadership role as a clickable card.
- *
- * EDIT THIS FILE TO:
- * - Change card styling
- * - Modify date format
- * - Update hover / focus behavior
- *
- * Location: components/ExperienceCard.tsx
- */
 import Link from 'next/link';
 
-interface ExperienceCardProps {
+/**
+ * ExperienceCard Example Component
+ * 
+ * Demonstrates semantic color token usage:
+ * - bg-surface for card background
+ * - border-border for card border
+ * - text-text-primary for title
+ * - text-text-muted for metadata
+ * - text-link for CTA link
+ * - hover states with elevated background
+ * 
+ * Location: components/examples/ExperienceCardExample.tsx
+ */
+interface ExperienceCardExampleProps {
   title: string;
   organization: string;
   location: string;
@@ -20,17 +21,17 @@ interface ExperienceCardProps {
   href: string;
 }
 
-export function ExperienceCard({
+export function ExperienceCardExample({
   title,
   organization,
   location,
   dateRange,
   href,
-}: ExperienceCardProps) {
+}: ExperienceCardExampleProps) {
   return (
     <Link
       href={href}
-      className="block bg-surface rounded-lg shadow-sm hover:shadow-md hover:bg-elevated hover:border-accent/50 transition-all border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-focus"
+      className="block bg-surface rounded-lg shadow-sm hover:shadow-md hover:bg-elevated transition-all border border-border focus:outline-none focus-visible:ring-2 focus-visible:ring-focus"
     >
       <div className="p-6 flex flex-col h-full">
         <div className="mb-3">
@@ -46,12 +47,11 @@ export function ExperienceCard({
           </div>
         </div>
 
-        {/* Small prompt to indicate the card is clickable */}
-        <p className="mt-auto text-sm text-link font-medium hover:text-link-hover transition-colors">
+        {/* CTA link */}
+        <p className="mt-auto text-sm text-link hover:text-link-hover font-medium transition-colors">
           Read the story →
         </p>
       </div>
     </Link>
   );
 }
-

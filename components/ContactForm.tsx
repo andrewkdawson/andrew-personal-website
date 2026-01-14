@@ -37,7 +37,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-sm font-medium text-text-secondary mb-2"
         >
           Name
         </label>
@@ -46,7 +46,7 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+          className="w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-focus focus:border-transparent bg-elevated text-text-primary placeholder:text-text-muted"
           placeholder="Your name"
         />
         <ValidationError prefix="Name" field="name" errors={state.errors} className="mt-1 text-sm text-red-600 dark:text-red-400" />
@@ -55,7 +55,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-sm font-medium text-text-secondary mb-2"
         >
           Email
         </label>
@@ -64,7 +64,7 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+          className="w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-focus focus:border-transparent bg-elevated text-text-primary placeholder:text-text-muted"
           placeholder="your.email@example.com"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} className="mt-1 text-sm text-red-600 dark:text-red-400" />
@@ -73,7 +73,7 @@ export default function ContactForm() {
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+          className="block text-sm font-medium text-text-secondary mb-2"
         >
           Message
         </label>
@@ -82,7 +82,7 @@ export default function ContactForm() {
           name="message"
           rows={6}
           required
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white"
+          className="w-full px-4 py-2 border border-border rounded-lg focus:ring-2 focus:ring-focus focus:border-transparent bg-elevated text-text-primary placeholder:text-text-muted"
           placeholder="Your message..."
         />
         <ValidationError prefix="Message" field="message" errors={state.errors} className="mt-1 text-sm text-red-600 dark:text-red-400" />
@@ -99,7 +99,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="w-full md:w-auto px-6 py-3 bg-accent hover:bg-accent-strong text-white font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-focus focus:ring-offset-2 focus:ring-offset-surface"
       >
         {state.submitting ? 'Sending...' : 'Send Message'}
       </button>
