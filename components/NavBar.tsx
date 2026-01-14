@@ -34,7 +34,7 @@ export function NavBar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-accent border-b border-accent-strong backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 bg-[#012169] border-b border-accent-strong backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Name */}
