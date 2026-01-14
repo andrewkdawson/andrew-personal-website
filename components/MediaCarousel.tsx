@@ -19,17 +19,17 @@ import Image from 'next/image';
 
 type MediaItem =
   | {
-      type: 'image';
-      src: string;
-      alt: string;
-      caption?: string;
-    }
+    type: 'image';
+    src: string;
+    alt: string;
+    caption?: string;
+  }
   | {
-      type: 'video';
-      src: string;
-      alt: string;
-      caption?: string;
-    };
+    type: 'video';
+    src: string;
+    alt: string;
+    caption?: string;
+  };
 
 // EDIT THIS ARRAY: add or remove images/videos here.
 // Place your files in /public (e.g., /public/about/headshot-1.jpg)
@@ -134,11 +134,10 @@ export function MediaCarousel() {
             {mediaItems.map((_, i) => (
               <span
                 key={i}
-                className={`h-1.5 w-1.5 rounded-full ${
-                  i === index
+                className={`h-1.5 w-1.5 rounded-full ${i === index
                     ? 'bg-white'
                     : 'bg-white/40 dark:bg-white/30'
-                }`}
+                  }`}
               />
             ))}
           </div>

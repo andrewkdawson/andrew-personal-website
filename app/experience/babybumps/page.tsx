@@ -68,7 +68,7 @@ export default function BabyBumpsExperience() {
             href="https://dukecfci.notion.site/Reimagining-Surrogacy-with-a-Guided-Online-Journey-22b478a62ca181c384a2f333412a3ff1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-duke-800 dark:text-duke-400 hover:underline"
           >
             View the project overview
           </a>
@@ -80,7 +80,7 @@ export default function BabyBumpsExperience() {
             href="https://docs.google.com/presentation/d/1ns5x6OcehUii2GfmwB44be4vB2UlE08hc8Rgn9QlrEY/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:underline"
+            className="text-duke-800 dark:text-duke-400 hover:underline"
           >
             View the demo slide deck
           </a>

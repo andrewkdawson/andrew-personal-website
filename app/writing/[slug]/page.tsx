@@ -23,9 +23,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function WritingPost({ 
-  params 
-}: { 
+export default async function WritingPost({
+  params
+}: {
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params;
@@ -38,16 +38,16 @@ export default async function WritingPost({
   // Format date for display (parse as local date to avoid timezone issues)
   const formattedDate = post.date
     ? (() => {
-        const dateStr = post.date;
-        // Parse YYYY-MM-DD as local date (not UTC)
-        const [year, month, day] = dateStr.split('-').map(Number);
-        const date = new Date(year, month - 1, day);
-        return date.toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        });
-      })()
+      const dateStr = post.date;
+      // Parse YYYY-MM-DD as local date (not UTC)
+      const [year, month, day] = dateStr.split('-').map(Number);
+      const date = new Date(year, month - 1, day);
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      });
+    })()
     : '';
 
   // Custom components for ReactMarkdown to apply proper Tailwind styling
@@ -116,7 +116,7 @@ export default async function WritingPost({
 
   return (
     <main className="min-h-screen flex flex-col py-12">
-      <ContentSection>
+      <ContentSection className="max-w-2xl">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
           {post.title}
         </h1>

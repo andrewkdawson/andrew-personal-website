@@ -47,8 +47,8 @@ export default function Home() {
             Add your portrait image to the /public folder and update the path below.
             Example: if your image is /public/andrew-portrait.jpg, use "/andrew-portrait.jpg"
           */}
-          <Hero 
-            title="Aloha, I'm Andrew!" 
+          <Hero
+            title="Aloha, I'm Andrew!"
             imageSrc="/headshot.jpeg"
             imageAlt="Andrew Kwon Dawson"
           />
@@ -62,9 +62,9 @@ export default function Home() {
                 This is a starter paragraph based on the resume - feel free to customize it!
               */}
               <p className="text-lg md:text-xl text-white leading-relaxed mb-8 drop-shadow-lg">
-                I'm a product-focused Master of Engineering Management student at Duke University. 
-                Raised in Honolulu, Hawai'i, I find purpose in building products with 
-                aloha, the philosophy of love and empathy that I was taught to live by.            
+                I'm a product-focused Master of Engineering Management student at Duke University.
+                Raised in Honolulu, Hawai'i, I find purpose in building products with
+                aloha, the philosophy of love and empathy that I was taught to live by.
               </p>
             </div>
           </ContentSection>
@@ -73,18 +73,18 @@ export default function Home() {
           <ContentSection className="mb-16">
             <div className="space-y-6">
               {/* Currently Section */}
-              <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-gray-700/50 shadow-xl">
+              <div className="bg-white/90 dark:bg-duke-navy-800/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-duke-navy-700/50 shadow-xl">
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   Currently: Product Management Fellow @ Christensen Family Center for Innovation
                 </h2>
                 <p className="text-base text-gray-700 dark:text-gray-300">
-                Co-led launch of Duke Product Lab; mentor 20+ student PMs; 
-                oversaw hiring & onboarding for inaugural cohort.
+                  Co-led launch of Duke Product Lab; mentor 20+ student PMs;
+                  oversaw hiring & onboarding for inaugural cohort.
                 </p>
               </div>
 
               {/* Studying Section */}
-              <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-gray-700/50 shadow-xl">
+              <div className="bg-white/90 dark:bg-duke-navy-800/90 backdrop-blur-sm rounded-lg p-6 border border-white/20 dark:border-duke-navy-700/50 shadow-xl">
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   Studying: Duke University
                 </h2>

@@ -15,8 +15,11 @@ interface ContentSectionProps {
 }
 
 export function ContentSection({ children, className = '' }: ContentSectionProps) {
+  // Use max-w-4xl as default if no other max-w is provided in className
+  const maxWidthClass = className.includes('max-w-') ? '' : 'max-w-4xl';
+
   return (
-    <section className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
+    <section className={`${maxWidthClass} mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
       {children}
     </section>
   );

@@ -30,7 +30,7 @@ export function WritingCard({
   return (
     <Link
       href={href}
-      className="block bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 dark:border-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+      className="block bg-white dark:bg-duke-navy-800 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-200 dark:border-duke-navy-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
     >
       <div className="p-6 flex flex-col h-full">
         <div className="mb-3">

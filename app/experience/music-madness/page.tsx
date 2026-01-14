@@ -137,7 +137,7 @@ export default function MusicMadnessProject() {
                 href="https://developer.spotify.com/documentation/web-api"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 Spotify Web API
               </a>
@@ -160,7 +160,7 @@ export default function MusicMadnessProject() {
             href="https://music-madness.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            className="inline-flex items-center text-lg font-semibold text-duke-800 dark:text-duke-400 hover:underline"
           >
             👉 music-madness.vercel.app
           </a>

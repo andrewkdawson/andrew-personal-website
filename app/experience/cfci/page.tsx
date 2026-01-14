@@ -52,7 +52,7 @@ export default function CfciFellowExperience() {
                 href="https://cfci.pratt.duke.edu/2025/11/19/student-highlight-andrew-dawson/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 CFCI Student Highlight: Andrew Dawson
               </a>

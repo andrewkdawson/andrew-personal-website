@@ -20,11 +20,20 @@ const config: Config = {
   darkMode: 'class', // Enable class-based dark mode
   theme: {
     extend: {
-      // Hawaiian-inspired color palette suggestions
       colors: {
-        // You can add custom colors here
-        // Example: 'hawaiian-blue': '#0077BE',
-        // Example: 'hawaiian-coral': '#FF6B6B',
+        'duke-navy': {
+          DEFAULT: '#012169',
+          50: '#E6EBF5',
+          100: '#CCD7EB',
+          200: '#99AFD7',
+          300: '#6687C3',
+          400: '#335FAF',
+          500: '#012169',
+          600: '#011A54',
+          700: '#01143F',
+          800: '#000D2A',
+          900: '#000715',
+        },
       },
     },
   },

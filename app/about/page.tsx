@@ -66,16 +66,16 @@ export default function About() {
                 I'm faith-driven, striving to keep God first in all aspects of life.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Check out my{' '}
-              <a
-                href="https://www.goodreads.com/andrewkdawson"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline dark:text-blue-400"
-              >
-                Goodreads
-              </a>{' '}
-              to see what I'm reading!
+                Check out my{' '}
+                <a
+                  href="https://www.goodreads.com/andrewkdawson"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline dark:text-blue-400"
+                >
+                  Goodreads
+                </a>{' '}
+                to see what I'm reading!
               </p>
             </div>
           </section>

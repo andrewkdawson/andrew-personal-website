@@ -30,19 +30,34 @@ export const metadata: Metadata = {
   keywords: ["product management", "engineering", "Duke University", "Andrew Dawson", "Andrew Kwon Dawson", "Hawaii"],
 };
 
+// Script to apply dark mode immediately, before React hydrates
+// This prevents flash of light mode
+const darkModeScript = `
+  (function() {
+    var stored = localStorage.getItem('theme');
+    // Default to dark mode if no preference is stored
+    if (stored !== 'light') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: darkModeScript }} />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-duke-navy text-gray-900 dark:text-gray-100 min-h-screen flex flex-col`}
       >
         <NavBar />
         <div className="flex-grow">
-        {children}
+          {children}
         </div>
         <Footer />
       </body>

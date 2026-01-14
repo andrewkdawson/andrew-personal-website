@@ -3,33 +3,44 @@
 /**
  * Global Styles
  * 
- * EDIT THIS FILE TO:
- * - Change color scheme (Hawaiian-inspired: warm accent colors + neutral grays)
- * - Modify typography
- * - Update global spacing
- * 
- * Color Palette Suggestion (Hawaiian-inspired):
- * - Primary: Blue (#2563eb) - ocean-inspired
- * - Accent: Warm orange/coral for highlights
- * - Neutral: Gray scale for text and backgrounds
+ * Duke Navy Blue Theme - Tailwind CSS v4
  * 
  * Location: app/globals.css
  */
+
+/* Configure class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define custom Duke Navy Blue color palette for Tailwind v4 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Duke Navy Blue color palette */
+  --color-duke-navy-50: #E6EBF5;
+  --color-duke-navy-100: #CCD7EB;
+  --color-duke-navy-200: #99AFD7;
+  --color-duke-navy-300: #6687C3;
+  --color-duke-navy-400: #335FAF;
+  --color-duke-navy: #012169;
+  --color-duke-navy-500: #012169;
+  --color-duke-navy-600: #011A54;
+  --color-duke-navy-700: #01143F;
+  --color-duke-navy-800: #000D2A;
+  --color-duke-navy-900: #000715;
+}
 
 :root {
   --background: #f9fafb;
   --foreground: #111827;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #012169;
+  --foreground: #ffffff;
 }
-
-/* Dark mode is handled by Tailwind's dark: classes */
-/* The dark class is toggled via JavaScript in DarkModeToggle component */
 
 body {
   font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;

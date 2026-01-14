@@ -20,11 +20,11 @@ export default function Writing() {
 
   return (
     <main className="min-h-screen flex flex-col py-12">
-      <ContentSection>
+      <ContentSection className="max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           Writing
         </h1>
-        <p className="text-gray-700 dark:text-gray-300 mb-10 max-w-2xl">
+        <p className="text-gray-700 dark:text-gray-300 mb-10">
           Stories, essays, insights, and reflections. My creative outlet.
         </p>
 
@@ -39,16 +39,16 @@ export default function Writing() {
                 // Format date for display (parse as local date to avoid timezone issues)
                 const formattedDate = post.date
                   ? (() => {
-                      const dateStr = post.date;
-                      // Parse YYYY-MM-DD as local date (not UTC)
-                      const [year, month, day] = dateStr.split('-').map(Number);
-                      const date = new Date(year, month - 1, day);
-                      return date.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      });
-                    })()
+                    const dateStr = post.date;
+                    // Parse YYYY-MM-DD as local date (not UTC)
+                    const [year, month, day] = dateStr.split('-').map(Number);
+                    const date = new Date(year, month - 1, day);
+                    return date.toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    });
+                  })()
                   : '';
 
                 return (

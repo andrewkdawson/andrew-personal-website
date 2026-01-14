@@ -67,7 +67,7 @@ export default function FantasyPowerRankingsProject() {
                 href="https://nextjs.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 Next.js 15 (App Router)
               </a>
@@ -78,7 +78,7 @@ export default function FantasyPowerRankingsProject() {
                 href="https://tailwindcss.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 Tailwind CSS
               </a>
@@ -89,7 +89,7 @@ export default function FantasyPowerRankingsProject() {
                 href="https://github.com/hello-pangea/dnd"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 @hello-pangea/dnd
               </a>
@@ -100,7 +100,7 @@ export default function FantasyPowerRankingsProject() {
                 href="https://vercel.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 dark:text-blue-400 hover:underline"
+                className="text-duke-800 dark:text-duke-400 hover:underline"
               >
                 Vercel
               </a>
@@ -120,7 +120,7 @@ export default function FantasyPowerRankingsProject() {
             href="https://fantasy-rankings-seven.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+            className="inline-flex items-center text-lg font-semibold text-duke-800 dark:text-duke-400 hover:underline"
           >
             👉 https://fantasy-rankings-seven.vercel.app/
           </a>
