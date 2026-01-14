@@ -65,6 +65,7 @@ export default function Home() {
                 I'm a product-focused Master of Engineering Management student at Duke University.
                 Raised in Honolulu, Hawai'i, I find purpose in building products with
                 aloha, the philosophy of love and empathy that I was taught to live by.
+                I'm passionate about storytelling through sports and entertainment technology. 
               </p>
             </div>
           </ContentSection>
