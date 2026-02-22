@@ -48,9 +48,12 @@ I loved this one from start to finish. I had the audiobook too, so I listened to
 
 ## 3\. Dark Matter by Blake Crouch
 
+Blake Crouch is a wizard with the pen. I love how this book is so strong from a sci-fi perspective with such a thrilling concept, but it also has so much heart. Blake Crouch gotta be First Team All-Yearner. It reminded me of one of those Rick and Morty episodes that ends up making you want to cry. Excited to read more from Crouch in 2026, starting with Recursion.
 
 ## 2\. Tuesdays with Morrie by Mitch Albom
 
+This is a book I want to revisit over and over for the rest of my life. What a powerful story, and what an incredible man. This one had me tearing up on the plane ride back to Duke at the end of the summer. It's not too long, but it made me want to be a better man. Can't recommend it more.
 
 ## 1\. The Sword of Kaigen by M. L. Wang
 
+If you'd talked to me about my reading at all this year, you probably heard me rave about The Sword of Kaigen. This might be my favorite book of all time. The characters have so much depth, the setting is so compelling, the magic system is so much fun. But oh my goodness. The emotional heights this book has are second to none. If you've read it, you know the part I'm talking about. I don't think a book has every had me crying real grown-man tears the way this one did. It was shocking, it was beautiful, and it was inspiring. I'm planning on reading Blood over Bright Haven next year, but I don't know if I'm ready for M. L. Wang to destroy me emotionally again. My one issue with the book is all of the in-universe vocab, especially as a Kindle reader, because I pretty much had to live in the glossary on another device for the first few chapters. But I'm glad I was able to figure that out and enjoy this beautiful, heartbreaking, hopeful story. Definitely on my Mount Rushmore with Flowers for Algernon, The Martian, and Ready Player One. Read this book!

@@ -25,7 +25,7 @@ export default function Writing() {
           Writing
         </h1>
         <p className="text-gray-700 dark:text-gray-300 mb-10">
-          Stories, essays, insights, and reflections. My creative outlet.
+          Stories, essays, insights, and reflections.
         </p>
 
         <section className="mb-16">
