@@ -19,6 +19,9 @@ import { ExperienceCard } from '@/components/ExperienceCard';
  * reflects the resume as of the date the website was created.
  */
 
+// Update this date when you refresh the experience content
+const LAST_UPDATED = 'December 20, 2025';
+
 export default function Experience() {
   // Work Experience Data
   // EDIT THIS ARRAY to add/remove/modify work experience entries
@@ -114,9 +117,12 @@ export default function Experience() {
   return (
     <main className="min-h-screen flex flex-col py-12">
       <ContentSection>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">
           Experience
         </h1>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-12">
+          Last updated: {LAST_UPDATED}
+        </p>
 
         {/* Work Experience Section */}
         <section className="mb-16">

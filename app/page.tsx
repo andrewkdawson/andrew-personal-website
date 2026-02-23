@@ -73,10 +73,30 @@ export default function Home() {
           {/* Status Section */}
           <ContentSection className="mb-16">
             <div className="space-y-6">
-              {/* Currently Section */}
+              {/* GunnerPool Section */}
               <div className="bg-surface/95 backdrop-blur-sm rounded-lg p-6 border border-accent/30 shadow-xl">
                 <h2 className="text-lg font-semibold text-text-primary mb-2">
-                  Currently: Product Management Fellow @ Christensen Family Center for Innovation
+                  Currently building{' '}
+                <a
+                  href="https://gunnerpool.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#5b9bd5] hover:text-[#7ab3e8] hover:decoration-[#7ab3e8] focus:outline-none focus-visible:ring-2 focus-visible:ring-focus rounded"
+                >
+                  GunnerPool
+                </a>
+                !
+                </h2>
+                <p className="text-base text-text-secondary">
+                  Fantasy sports for tournaments.
+                  I have ownership of design, development, and end-to-end user experience.
+                </p>
+              </div>
+
+              {/* CFCI Fellow Section */}
+              <div className="bg-surface/95 backdrop-blur-sm rounded-lg p-6 border border-accent/30 shadow-xl">
+                <h2 className="text-lg font-semibold text-text-primary mb-2">
+                  Product Management Fellow @ Christensen Family Center for Innovation
                 </h2>
                 <p className="text-base text-text-secondary">
                   Co-led launch of Duke Product Lab; mentor 20+ student PMs;
@@ -84,10 +104,10 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Studying Section */}
+              {/* Duke Section */}
               <div className="bg-surface/95 backdrop-blur-sm rounded-lg p-6 border border-accent/30 shadow-xl">
                 <h2 className="text-lg font-semibold text-text-primary mb-2">
-                  Studying: Duke University
+                  Studying at Duke University
                 </h2>
                 <p className="text-base text-text-secondary">
                   Master of Engineering Management ('26)
